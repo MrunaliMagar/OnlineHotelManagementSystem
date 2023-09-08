@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+ 
+<title>Login page</title>
+<script>
+    function alertbox(){
+        alert('Logged-in successfully');
+    }
+</script>
+{% endblock %}
+
+{% block body %} 
+<img src="/static/ALYAL Hotel Lobby Design.jpg" height="100%" width="100%">
+<form action="/cancel" method="POST"> 
+    <div class="email-card">
+        <div class="cancellation-details">
+            <h3 class="login_title">Enter your email and room no.</h3>
+            <br>
+            <input type="text" class="email-for-cancellation" placeholder="Email" name="email" id="email" >
+            <br><br>
+            <input type=number class="email-for-cancellation" placeholder="Room-no" name="room-no" id="room-no" >
+            <!-- <br> -->
+            <button class="cancel-button" type="submit" style="margin-top: 20px;">Cancel</button>
+        </div>
+        
+    </div> 
+    
+</form>        
+{% endblock %}

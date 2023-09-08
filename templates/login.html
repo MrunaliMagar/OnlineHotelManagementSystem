@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+ 
+<title>Login page</title>
+<script>
+    function alertbox(){
+        alert('Logged-in successfully');
+    }
+</script>
+{% endblock %}
+
+{% block body %} 
+<img src="/static/ban4.jpg" height="100%" width="100%">
+    <form action="/login" method="POST">  
+        <div class="login-card">
+            <div class="login-details">
+            <h3 class="login_title">Log-in</h3>
+            <input type="text" class="email" placeholder="Email" name="email" id="email" required>
+            <br>
+
+            <input type="password" class="password" placeholder="Password" name="password" id="password"  >
+            <br>
+            <button type="submit" class="login-button btn btn-dark sign-up-button">Log In</button>
+            <br>
+            
+            <br>
+            <br>
+            <a href="/register"><button type="button" class="register-button login-button btn btn-dark sign-up-button">Register/ Sign Up</button></a> 
+            </div>
+        </div>
+    </form>
+{% endblock %}
